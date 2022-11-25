@@ -2,6 +2,7 @@ main{
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 1fr;
+    height: 100vh;
 }
 app-nav{
     background-color: #5e5d5a;
