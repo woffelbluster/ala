@@ -6,7 +6,15 @@ section{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 
+    .card{
+        background-color: green;
+        margin: 10px;
+        width: 9vw;
+        border-radius: 10px;
+    }
+
     .bold{
         font-weight: bold;
+        margin-left: 10px;
     }
 }
