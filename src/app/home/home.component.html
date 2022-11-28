@@ -1,9 +1,7 @@
 <h1>Alle Wk jaren</h1>
 
-<article>
-    <ul>
-        <li *ngFor="let year of year">
+<section>
+    <article *ngFor="let year of year">
             <h4>Jaar:</h4>{{year.year}}<h4>Land:</h4>{{year.Country}}<h4>First:</h4>{{year.Winner}}<h4>Second:</h4>{{year.Runners_Up}}<h4>Third:</h4>{{year.Third}}<h4>Fourth:</h4>{{year.Fourth}}
-        </li>
-    </ul>
-</article>
+    </article>
+</section>
