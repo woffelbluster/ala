@@ -1,7 +1,7 @@
 <h1>Alle Wk jaren</h1>
 
 <section>
-    <article *ngFor="let year of year">
-            <span class="bold">Jaar:</span>{{year.year}}<span class="bold">Land:</span>{{year.Country}}<span class="bold">First:</span>{{year.Winner}}<span class="bold">Second:</span>{{year.Runners_Up}}<span class="bold">Third:</span>{{year.Third}}<span class="bold">Fourth:</span>{{year.Fourth}}
+    <article class="kaas" *ngFor="let year of year">
+            <span class="bold">Jaar:</span>{{year.year}}<br><span class="bold">Land:</span>{{year.Country}}<br><span class="bold">First:</span>{{year.Winner}}<br><span class="bold">Second:</span>{{year.Runners_Up}}<br><span class="bold">Third:</span>{{year.Third}}<br><span class="bold">Fourth:</span>{{year.Fourth}}
     </article>
 </section>

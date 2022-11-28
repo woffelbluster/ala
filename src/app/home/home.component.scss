@@ -4,4 +4,9 @@
 }
 section{
     display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+    .bold{
+        font-weight: bold;
+    }
 }
