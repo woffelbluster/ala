@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
 section{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+
 
     .card{
-        background-color: green;
+        background-color: grey;
         margin: 10px;
         width: 9vw;
         border-radius: 10px;
