@@ -8,7 +8,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  GetAllYears(){
+  GetYears(){
     return this.http.get('https://k0497.azurewebsites.net/api/years/getallyears');
   }
 }

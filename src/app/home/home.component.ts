@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  year:any
+  info:any;
+
+  constructor(private data:DataService, private route:ActivatedRoute) {
+    this.route.params.subscribe(params => this.year = params['year']);
+  }
 
   ngOnInit(): void {
+    this.data.GetYears().subscribe(data => this.year = data);
   }
 
 }
