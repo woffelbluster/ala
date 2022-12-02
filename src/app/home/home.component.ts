@@ -10,7 +10,6 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   year:any
-  info:any;
 
   constructor(private data:DataService, private route:ActivatedRoute) {
     this.route.params.subscribe(params => this.year = params['year']);

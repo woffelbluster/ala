@@ -1,25 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
+    
 }
 
-section{
+.container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     align-content: center;
 
 
+
+
+
     .card{
-        background-color: grey;
-        margin: 2px;
-        width: 9vw;
+        background-color: green;
+        margin: 10px;
+        width: 8.5vw;
         border-radius: 10px;
     }
 
     .bold{
         font-weight: bold;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 }
