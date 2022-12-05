@@ -1,7 +1,12 @@
+<script>
+  function myFunction() {
+    document.getElementById("demo").style.color = "red";
+  }
+</script>
 <h1>Alle Wk jaren</h1>
 
 <section class="container">
-  <article class="card" *ngFor="let year of year">
+  <article id="demo" onclick="changeColor()" class="card" *ngFor="let year of year">
     <span class="bold">Jaar:</span>{{year.year}}<br>
     <span class="bold">Land:</span>{{year.Country}}<br>
     <span class="bold">First:</span>{{year.Winner}}<br>
