@@ -1,8 +1,9 @@
 <h1>Alle Wk jaren</h1>
-
+<div>
 <section class="container">
   <article class="card" *ngFor="let year of year">
-    <span class="bold">Jaar:</span>{{year.year}}<br>
+    
+    <a routerLink="laatste16:{{year.year}}"><span class="bold">Jaar:</span>{{year.year}}</a><br>
     <span class="bold">Land:</span>{{year.Country}}<br>
     <span class="bold">First:</span>{{year.Winner}}<br>
     <span class="bold">Second:</span>{{year.Runners_Up}}<br>
@@ -10,3 +11,9 @@
     <span class="bold">Fourth:</span>{{year.Fourth}}
   </article>
 </section>
+  <section class="laatste">
+    <router-outlet name="laatste16"></router-outlet>
+  </section>
+ 
+
+</div>

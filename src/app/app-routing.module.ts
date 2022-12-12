@@ -6,7 +6,12 @@ import { Laatste16Component } from './laatste16/laatste16.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+  },
+  {
+    path: "laatste16",
+    component: Laatste16Component,
+    outlet: "laatste16"
   }
 ];
 
