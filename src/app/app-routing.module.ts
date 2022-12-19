@@ -9,9 +9,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "laatste16",
+    path: 'laatste16/:id',
     component: Laatste16Component,
-    outlet: "laatste16"
+    
+    
   }
 ];
 
