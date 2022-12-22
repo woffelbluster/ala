@@ -12,10 +12,10 @@ export class DataService {
     return this.http.get('https://k0497.azurewebsites.net/api/years/getallyears');
   }
   GetYear(year: number){
-    return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatchesbyyear?year=${matchid}');
+    return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatchesbyyear?year='+year);
   }
   GetMatch(matchid: number){
-    return this.http.get('https://k0497.azurewebsites.net/api/matches/GetMatchesById?matchid=${matchid}');
+    return this.http.get('https://k0497.azurewebsites.net/api/matches/GetMatchesById?matchid='+matchid);
   }
 
   
