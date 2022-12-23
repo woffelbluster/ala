@@ -1,6 +1,7 @@
-<!-- dit werkt niet beetje jammer
-kan niet laten zien -->
+
 <div *ngFor="let match of year">
 
- {{match.id}}
+    <p><a routerLink="matchinfo/{{match.matchid}}"><span class="bold">id:</span>{{match.matchid}}</a></p><br>
+
+    {{match.id}}
 </div>
