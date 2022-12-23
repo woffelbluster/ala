@@ -11,13 +11,14 @@ export class Laatste16Component implements OnInit {
 
   year:any
 
-   constructor(private data:DataService, private route:ActivatedRoute) {}
-
-  ngOnInit(): void {
-    console.log(this.route.params);
+   constructor(private data:DataService, private route:ActivatedRoute) {
     this.route.params.subscribe(params => {this.year = params['id'];});
 
-    this.data.GetYears().subscribe(data => this.year = data);
+   }
+
+  ngOnInit(): void {
+
+    this.data.GetYear(this.year).subscribe(data => this.year = data);
 
 
     

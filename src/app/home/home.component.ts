@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
     this.data.GetYears().subscribe(data => this.years = data);
   }
+
 
 }
