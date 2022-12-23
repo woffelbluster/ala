@@ -49,10 +49,15 @@ export class Laatste16Component implements OnInit {
       //achtste finale
       this.year.forEach((item:any, index:any) => {
         if (index === 8 || index === 9 || index === 10 || index === 11 || index === 12 || index === 13 || index === 14 || index === 15) {
-          item.kwart = true;
+          item.achtste = true;
         }
       });
-
+      //voor rondes
+      this.year.forEach((item:any, index:any) => {
+        if (index === 16 || index === 17|| index === 18 || index === 19 || index === 20 || index === 21 || index === 22 || index === 23 || index === 24 || index === 25 || index === 26 || index === 27 || index === 28 || index === 29 || index === 30 || index === 31 || index === 32 || index === 33) {
+          item.voor = true;
+        }
+      });
 
 
 

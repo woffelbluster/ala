@@ -1,24 +1,31 @@
 <section class="container">
 
-    <div *ngFor="let item of year.slice()" [ngClass]="{'halve': item.halve, 'final': item.final, 'troost': item.troost, 'achtse': item.achtse, 'kwart': item.kwart}">
+    <div class="card" *ngFor="let item of year.slice()" [ngClass]="{'halve': item.halve, 'final': item.final, 'troost': item.troost, 'achtse': item.achtse, 'kwart': item.kwart}">
+        
         <a routerLink="matchinfo/{{item.matchid}}">
-          <span>{{item.id}}. </span>
-          <span>{{item.Away_Team_Name}}.</span>
-          <span>{{item.Away_Team_Goals}}.</span>
-          <span>-</span>
-          <span>{{item.Home_Team_Goals}}.</span>
-          <span>{{item.Home_Team_Name}}.</span>
-          <span>{{item.roundid}}</span>
-          <span *ngIf="item.final">final</span>
-          <span *ngIf="item.troost">troost ronde</span>
-          <span *ngIf="item.halve">halve finale</span>
-          <span *ngIf="item.kwart">kwart finale</span>
-          <span *ngIf="item.achtse">achtse finale</span>
-
-
-
-
+            <span>{{item.Away_Team_Name}} </span>
+            <span>{{item.Away_Team_Goals}} </span>
+            <span>-</span>
+            <span>{{item.Home_Team_Goals}} </span>
+            <span>{{item.Home_Team_Name}} </span>
         </a>
+        <h1 *ngIf="item.final">finale</h1>
+        <p *ngIf="item.troost">troost ronde</p>
+        <p *ngIf="item.halve">halve finale</p>
+        <p *ngIf="item.kwart">kwart finale</p>
+        <p *ngIf="item.achtste">achtste finale</p>
+        <p *ngIf="item.voor">voor rondes</p>
+          <p>stad:{{item.City}}</p>
+          <p>jaar:{{item.year}}</p>
+          
+          <!-- <p>nummer:{{item.id}}</p> -->
+
+        
+
+
+
+
+        
       </div>
       
    
