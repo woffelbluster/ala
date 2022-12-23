@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,8 +7,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+    
   GetYears(){
     return this.http.get('https://k0497.azurewebsites.net/api/years/getallyears');
   }

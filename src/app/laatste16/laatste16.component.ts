@@ -9,16 +9,18 @@ import { DataService } from '../data.service';
 })
 export class Laatste16Component implements OnInit {
 
-  match:any
+  year:any
 
-   constructor(private data:DataService, private route:ActivatedRoute) {
-    this.route.params.subscribe(params => this.match = params['match']);
-    
-  }
+   constructor(private data:DataService, private route:ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.data.GetYear(this.match).subscribe(data => this.match = data);
+    console.log(this.route.params);
+    this.route.params.subscribe(params => {this.year = params['id'];});
 
+    this.data.GetYears().subscribe(data => this.year = data);
+
+
+    
   }
 
 }
