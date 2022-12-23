@@ -1,5 +1,13 @@
-.laatste16{
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color: grey;
+}
+.card{
+    
+    background-color: blue;
 }

@@ -16,7 +16,9 @@ export class MatchinfoComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.data.GetMatch(this.match).subscribe(data => this.match = data);
+    this.data.GetMatch(this.match).subscribe(data => {this.match = data
+    });
+
 
   }
 

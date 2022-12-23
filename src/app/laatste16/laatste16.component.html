@@ -1,7 +1,29 @@
+<section class="container">
 
-<div *ngFor="let match of year">
+    <div *ngFor="let item of year.slice()" [ngClass]="{'halve': item.halve, 'final': item.final, 'troost': item.troost, 'achtse': item.achtse, 'kwart': item.kwart}">
+        <a routerLink="matchinfo/{{item.matchid}}">
+          <span>{{item.id}}. </span>
+          <span>{{item.Away_Team_Name}}.</span>
+          <span>{{item.Away_Team_Goals}}.</span>
+          <span>-</span>
+          <span>{{item.Home_Team_Goals}}.</span>
+          <span>{{item.Home_Team_Name}}.</span>
+          <span>{{item.roundid}}</span>
+          <span *ngIf="item.final">final</span>
+          <span *ngIf="item.troost">troost ronde</span>
+          <span *ngIf="item.halve">halve finale</span>
+          <span *ngIf="item.kwart">kwart finale</span>
+          <span *ngIf="item.achtse">achtse finale</span>
 
-    <p><a routerLink="matchinfo/{{match.matchid}}"><span class="bold">id:</span>{{match.matchid}}</a></p><br>
 
-    {{match.id}}
-</div>
+
+
+        </a>
+      </div>
+      
+   
+      
+      
+      
+
+</section>
