@@ -1,4 +1,4 @@
-
+<div class="match">
 <div *ngFor="let matchinfo of match">
 
     <br>
@@ -18,16 +18,22 @@
     {{matchinfo.Home_Team_Name}}
 
 </div>
+</div>
 
-   
-<div *ngFor="let p of players; index as i;">
-    <div *ngIf="i % 2 !== 0">
-        {{p.number}} {{p.name}} {{p.country}} 
+<div class="spelers">
+<div class="away">
+    <div  *ngFor="let p of players; index as i;">
+        <div *ngIf="i % 2 !== 0">
+            {{p.number}} {{p.name}} {{p.country}} 
+        </div>
     </div>
 </div>
 
-<div *ngFor="let p of players; index as i;">
-    <div *ngIf="i % 2 == 0">
-        {{p.number}} {{p.name}} {{p.country}} 
+<div class="home">
+    <div  *ngFor="let p of players; index as i;">
+        <div *ngIf="i % 2 == 0">
+         {{p.number}} {{p.name}} {{p.country}} 
+        </div>
     </div>
+</div>
 </div>
