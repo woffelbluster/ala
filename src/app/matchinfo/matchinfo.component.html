@@ -17,4 +17,17 @@
     {{matchinfo.Home_Team_Initials}}
     {{matchinfo.Home_Team_Name}}
 
-   </div>
+</div>
+
+   
+<div *ngFor="let p of players; index as i;">
+    <div *ngIf="i % 2 !== 0">
+        {{p.number}} {{p.name}} {{p.country}} 
+    </div>
+</div>
+
+<div *ngFor="let p of players; index as i;">
+    <div *ngIf="i % 2 == 0">
+        {{p.number}} {{p.name}} {{p.country}} 
+    </div>
+</div>

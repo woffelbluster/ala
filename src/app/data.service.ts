@@ -18,6 +18,9 @@ export class DataService {
   GetMatch(matchid: number){
     return this.http.get('https://k0497.azurewebsites.net/api/matches/GetMatchesById?matchid='+matchid);
   }
+  GetPlayers(matchid: number){
+    return this.http.get('https://k0497.azurewebsites.net/api/players/getallplayersbymatch?matchid='+matchid)
+  }
 
   
 }
