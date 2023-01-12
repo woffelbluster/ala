@@ -5,11 +5,12 @@
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 
     .card{
-        background-color: green;
+        background-color: grey;
         margin: 10px;
         width: 8.5vw;
         border-radius: 10px;
