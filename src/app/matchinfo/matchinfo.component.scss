@@ -2,28 +2,30 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.away{
 
+.team{
     width: 300px;
-    border: solid black 2px;
+    border: solid black 3px;
     border-radius: 10px;
     padding: 10px;
-}
-.home{
-
-    width: 300px;
-    border: solid black 2px;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
 }
 .spelers{
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-around;
 
 
 }
+@media screen and (max-width: 600px) {
+.spelers{
+    flex-direction: column;
+}
 
+  }
 .match{
     display: flex;
     flex-direction: column;
