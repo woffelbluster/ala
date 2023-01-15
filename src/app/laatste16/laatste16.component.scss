@@ -10,10 +10,9 @@
     margin: 10px;
 }
 .card{
-    color: white;
     width: auto;
-    background-color: blue;
-    border: solid 2px black;
+    background-color: #1163fc;
+    border: solid 3px black;
     border-radius: 2rem;
     box-sizing: border-box;
     padding: 10px;
@@ -23,12 +22,41 @@
     flex-wrap: wrap;
     font-size: 1rem;
 
+
 }
+.card:first-child{
+    background-color: #0015ff;
+    opacity: 1;
+    color: white;
+
+}
+.card:nth-child(2){
+    background-color: #0015ff ;
+    
+
+}
+.card:nth-child(3){
+    background-color: #0015ff7e;
+    opacity: 1;
+
+}
+.card:nth-child(4){
+    background-color: #0015ff7e;
+    opacity: 1;
+
+}
+
+
+
+
+
+
 
 .card a:link{
     text-decoration: none;
     color: rgb(0, 191, 255);
 }
 .card a:hover {
+    text-decoration: underline;
     color: rgb(0, 51, 255);
 }
